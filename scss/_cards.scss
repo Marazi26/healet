@@ -1,3 +1,4 @@
+/*** PRODUCTS ************************/
 @mixin card-sizings{
     
     background-size: 70%;
@@ -63,5 +64,106 @@
     }
     .card-8{
         background-size: 25%;
+    }
+}
+
+/*** SALES******************************/
+
+@mixin sales-card{
+    .sales-card-1{
+        background-image: url("../assets/sales/o1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-height: 81vh;
+        padding-left: 3.2%;
+
+    }
+    .sales-card-2{
+        background-image: url("../assets/sales/o2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 36.5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+
+        padding-right: 3.2%;
+        padding-bottom: 2%;
+        
+        
+    }
+    .sales-card-3{
+        background-image: url("../assets/sales/o3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        min-height: 36.5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+
+        padding-left: 3.2%;
+        padding-bottom: 2%;
+    }
+}
+
+@mixin sales-card-tablet{
+    .sales-card-1{
+        background-image: url("../assets/sales/o1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-height: 82vh;
+        padding-left: 3.2%;
+
+    }
+    .sales-card-2{
+        background-image: url("../assets/sales/o2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+
+        padding-right: 3.2%;
+        padding-bottom: 2%;
+        
+        
+    }
+    .sales-card-3{
+        background-image: url("../assets/sales/o3.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        min-height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+
+        padding-left: 3.2%;
+        padding-bottom: 2%;
     }
 }

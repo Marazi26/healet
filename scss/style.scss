@@ -151,6 +151,7 @@ img {
         .header-overlay {
             @include section-vh-desktop;
             padding-bottom: 2rem;
+
             h1 {
                 @include title;
                 font-size: 3.5rem;
@@ -238,6 +239,7 @@ img {
                 @include title;
             }
         }
+
         .products-info {
             @include flex-box;
             justify-content: space-around;
@@ -372,24 +374,25 @@ img {
     }
 }
 
-/*** PRODUCTS **************************************************************/
+/*** ABOUT **************************************************************/
 
-.about{
+.about {
     @include section-sizing-desktop;
     @include flex-center-column;
 
-    .about-overlay{
+    .about-overlay {
         @include section-vh-desktop;
         @include flex-box;
         gap: 2rem;
 
-        .about-images{
+        .about-images {
             width: 50%;
             display: flex;
             justify-content: flex-end;
             align-items: end;
             position: relative;
-            &::after{
+
+            &::after {
                 content: "";
                 width: 50%;
                 height: 70%;
@@ -397,23 +400,28 @@ img {
                 position: absolute;
                 top: -2rem;
                 left: 0;
-                z-index: 0; 
+                z-index: 0;
             }
-            img{
+
+            img {
                 width: 96%;
                 z-index: 1;
             }
         }
-        .about-info{
+
+        .about-info {
             width: 49%;
-            h2{
-                @include title;                
+
+            h2 {
+                @include title;
             }
-            p{
+
+            p {
                 @include text-norm;
                 padding: 1rem 0 2rem 0;
             }
-            a{
+
+            a {
                 @include colored-button;
             }
         }
@@ -421,30 +429,33 @@ img {
 
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include flex-center;
-        
-        .about-overlay{
+
+        .about-overlay {
             @include section-sizing-tablet;
             @include section-vh-tablet;
             @include flex-box;
             gap: 2rem;
-    
-            .about-images{
+
+            .about-images {
                 width: 59%;
 
-                &::after{
+                &::after {
                     content: "";
                     width: 50%;
                     height: 70%;
                     top: -1.2rem;
                 }
             }
-            .about-info{
+
+            .about-info {
                 width: 45%;
-                h2{
+
+                h2 {
                     @include tablet-title;
-                    margin: 0;                
+                    margin: 0;
                 }
-                p{
+
+                p {
                     @include text-norm-tablet;
                     font-size: .9rem;
                     padding: .8rem 0 2rem 0;
@@ -453,24 +464,26 @@ img {
         }
     }
 
-    @media screen and (min-width:320px)  and (max-width:768px) {
+    @media screen and (min-width:320px) and (max-width:768px) {
         @include flex-center;
         margin-top: 5rem;
+        margin-bottom: 4rem;
 
-        .about-overlay{
+        .about-overlay {
             @include section-vh-mobile;
             @include section-sizing-mobile;
             flex-direction: column;
             align-items: flex-start;
             gap: 2rem;
-    
-            .about-images{
+
+            .about-images {
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: end;
                 position: relative;
-                &::after{
+
+                &::after {
                     content: "";
                     width: 50%;
                     height: 70%;
@@ -478,26 +491,188 @@ img {
                     position: absolute;
                     top: -2rem;
                     left: 0;
-                    z-index: 0; 
+                    z-index: 0;
                 }
-                img{
+
+                img {
                     width: 96%;
                     z-index: 1;
                 }
             }
-            .about-info{
+
+            .about-info {
                 width: 100%;
-                h2{
-                    @include title-mobile;   
+
+                h2 {
+                    @include title-mobile;
                     // letter-spacing: normal;             
                     margin-bottom: 1rem;
                 }
-                p{
+
+                p {
                     @include text-norm;
                     padding: 1rem 0 2rem 0;
                 }
-                a{
+
+                a {
                     @include colored-button;
+                }
+            }
+        }
+    }
+}
+
+/*** SALES **************************************************************/
+
+.sales {
+    @include flex-center-column;
+
+    .sales-overlay {
+
+        width: 98%;
+        @include flex-box;
+        align-items: stretch;
+        gap: 2rem;
+
+        .left-sales {
+            border: 1px solid wheat;
+            width: 60%;
+            @include sales-card;
+
+            h3 {
+                @include title;
+                margin: 1rem 0;
+                color: $color-white;
+            }
+
+            a {
+                @include empty-button;
+                border-radius: 0;
+                padding: 1% 4.5%;
+
+            }
+        }
+
+        .right-sales {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 39%;
+            @include sales-card;
+
+            h3 {
+                @include tablet-title;
+                color: $color-white;
+                text-transform: capitalize;
+            }
+
+            a {
+                @include empty-button;
+                margin: 1rem 0;
+                border-radius: 0;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .sales-overlay {
+
+            width: 98%;
+            @include flex-box;
+            align-items: stretch;
+
+            gap: 1rem;
+    
+            .left-sales {
+                border: 1px solid wheat;
+                width: 60%;
+                @include sales-card-tablet;
+    
+                h3 {
+                    @include tablet-title;
+                    text-transform: capitalize;
+                    margin: 1rem 0;
+                    color: $color-white;
+                }
+    
+                a {
+                    @include empty-button;
+                    border-radius: 0;
+                    padding: 1% 4.5%;
+    
+                }
+            }
+    
+            .right-sales {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2rem;
+                width: 39%;
+                @include sales-card;
+    
+                h3 {
+                    @include title-mobile;
+                    font-size: 1.5rem;
+                    color: $color-white;
+                    text-transform: capitalize;
+                }
+    
+                a {
+                    @include empty-button;
+                    margin: 1rem 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .sales-overlay {
+
+            width: 98%;
+            @include flex-center-column;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+    
+            .left-sales {
+                width: 100%;
+                .sales-card-1{
+                    min-height: 30vh;
+                    background-size: cover;
+                    background-position: center;
+                }
+                h3 {
+                    @include tablet-title;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                }
+    
+                a {
+                    @include empty-button;
+                    border-radius: 0;
+                    padding: 1% 4.5%;
+    
+                }
+            }
+    
+            .right-sales {
+                gap: 1rem;
+                width: 100%;
+                
+                h3 {
+                    @include title-mobile;
+                    font-size: 1.5rem;
+                    color: $color-white;
+                    text-transform: capitalize;
+                }
+    
+                a {
+                    @include empty-button;
+                    margin: 1rem 0;
+                    border-radius: 0;
                 }
             }
         }

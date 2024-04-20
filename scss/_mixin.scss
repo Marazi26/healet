@@ -41,7 +41,7 @@
 }
 /*** MOBILE ************************************/
 @mixin section-sizing-mobile{
-    width:90%;
+    width:85%;
 }
 @mixin section-vh-mobile{
     min-height: 100vh;
@@ -73,7 +73,7 @@
     margin: 2rem 0;
 }
 /*** SECTION TITLES *****************/
-@mixin title{
+@mixin tablet-title{
     font-family: 'Playfair Display',serif;
     font-size: 2rem;
     font-weight: 700;
@@ -91,7 +91,8 @@
     font-family: 'Playfair Display',serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -.1rem;
+    // letter-spacing: -.1rem;
+    text-transform: uppercase;
     line-height: 1;
 }
 /*** TEXT SIZINGS*****************/

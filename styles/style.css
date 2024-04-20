@@ -107,7 +107,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-and-header nav .nav-overlay {
-    width: 90%;
+    width: 85%;
     padding: 2% 0;
   }
   .nav-and-header nav .nav-overlay .left-nav h2 {
@@ -146,9 +146,9 @@ img {
 }
 .nav-and-header header .header-overlay h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  text-transform: uppercase;
+  margin: 2rem 0;
   font-size: 3.5rem;
   color: #ffffff;
   width: 35%;
@@ -219,7 +219,7 @@ img {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.1rem;
+    text-transform: uppercase;
     line-height: 1;
     min-width: 47%;
     letter-spacing: -0.7px;
@@ -270,9 +270,9 @@ img {
 }
 .products .products-overlay .products-title h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  text-transform: uppercase;
+  margin: 2rem 0;
 }
 .products .products-overlay .products-info {
   display: flex;
@@ -397,9 +397,9 @@ img {
   }
   .products .products-overlay .products-title h2 {
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    text-transform: uppercase;
+    margin: 2rem 0;
   }
   .products .products-overlay .products-info {
     display: flex;
@@ -469,13 +469,14 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
   }
   .products .products-overlay .products-title h2 {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1;
   }
   .products .products-overlay .products-info {
     display: flex;
@@ -540,6 +541,201 @@ img {
   }
   .products .products-overlay .products-info .card-8 {
     background-size: 25%;
+  }
+}
+
+/*** PRODUCTS **************************************************************/
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-overlay {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.about .about-overlay .about-images {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  position: relative;
+}
+.about .about-overlay .about-images::after {
+  content: "";
+  width: 50%;
+  height: 70%;
+  background-color: #160e0b;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  z-index: 0;
+}
+.about .about-overlay .about-images img {
+  width: 96%;
+  z-index: 1;
+}
+.about .about-overlay .about-info {
+  width: 49%;
+}
+.about .about-overlay .about-info h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.about .about-overlay .about-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 0 2rem 0;
+}
+.about .about-overlay .about-info a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #fd9c6b;
+  color: #fd9c6b;
+  background-color: transparent;
+  padding: 1% 4%;
+  border-radius: 0.4rem;
+  transition: 0.1s linear;
+  background-color: #fd9c6b;
+  color: #ffffff;
+}
+.about .about-overlay .about-info a:hover {
+  border: 1px solid #fd9c6b;
+  color: #ffffff;
+  background-color: #fd9c6b;
+}
+.about .about-overlay .about-info a:hover {
+  background-color: transparent;
+  color: #fd9c6b;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-overlay {
+    width: 89%;
+    min-height: 72vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-images {
+    width: 59%;
+  }
+  .about .about-overlay .about-images::after {
+    content: "";
+    width: 50%;
+    height: 70%;
+    top: -1.2rem;
+  }
+  .about .about-overlay .about-info {
+    width: 45%;
+  }
+  .about .about-overlay .about-info h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .about .about-overlay .about-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 0.8rem 0 2rem 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .about .about-overlay {
+    min-height: 100vh;
+    width: 85%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-images {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    position: relative;
+  }
+  .about .about-overlay .about-images::after {
+    content: "";
+    width: 50%;
+    height: 70%;
+    background-color: #160e0b;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    z-index: 0;
+  }
+  .about .about-overlay .about-images img {
+    width: 96%;
+    z-index: 1;
+  }
+  .about .about-overlay .about-info {
+    width: 100%;
+  }
+  .about .about-overlay .about-info h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .about .about-overlay .about-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1rem 0 2rem 0;
+  }
+  .about .about-overlay .about-info a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #fd9c6b;
+    color: #fd9c6b;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: 0.4rem;
+    transition: 0.1s linear;
+    background-color: #fd9c6b;
+    color: #ffffff;
+  }
+  .about .about-overlay .about-info a:hover {
+    border: 1px solid #fd9c6b;
+    color: #ffffff;
+    background-color: #fd9c6b;
+  }
+  .about .about-overlay .about-info a:hover {
+    background-color: transparent;
+    color: #fd9c6b;
   }
 }
 

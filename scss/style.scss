@@ -1,5 +1,373 @@
-nav{
-    h1{
-    color: red;
+@import "./mixin";
+@import "./variables";
+@import "./cards";
+
+/***RESETS***************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*** NAV **************************************************************/
+
+.nav-and-header {
+    background-image: url('../assets/header/slider-bg.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+    nav {
+        @include flex-center;
+
+        .nav-overlay {
+            @include section-97-sizing;
+            padding: 1.5% 0;
+            position: relative;
+            @include flex-box;
+
+            .left-nav {
+                h2 {
+                    @include little-title;
+                    color: $color-white;
+                    position: static;
+                }
+            }
+
+            .right-nav {
+                .line-div {
+                    background-color: $color-white;
+                    border: .5px solid #f1eeee;
+                    padding: .7rem .7rem;
+                    border-radius: 50%;
+                    font-size: 1.7rem;
+                    position: fixed;
+                    right: 2rem;
+                    top: 1rem;
+                    @include flex-center-column;
+
+                    :first-child {
+                        margin-top: .35rem;
+                    }
+
+                    .line {
+                        width: 2rem;
+                        border: 2.1px solid #151515;
+                        margin-bottom: .35rem;
+                        border-radius: .2rem;
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+
+            .nav-overlay {
+                .left-nav {
+                    h2 {
+                        @include little-title-tab;
+                        color: $color-white;
+                    }
+                }
+
+                .line-div {
+                    padding: .7rem .7rem;
+                    font-size: 1.7rem;
+                    right: 0rem;
+                    top: 0rem;
+
+                    :first-child {
+                        margin-top: .35rem;
+                    }
+
+                    .line {
+                        width: 2rem;
+                        border: 2.1px solid #151515;
+                        margin-bottom: .35rem;
+                        border-radius: .2rem;
+                    }
+                }
+            }
+        }
+
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+
+            .nav-overlay {
+                @include section-sizing-mobile;
+                padding: 2% 0;
+
+                .left-nav {
+                    h2 {
+                        @include little-title-mob;
+                        color: $color-white;
+                    }
+                }
+
+                .right-nav {
+
+                    .line-div {
+                        padding: .6rem .7rem;
+                        font-size: 1.7rem;
+                        right: 1rem;
+                        top: .6rem;
+
+                        :first-child {
+                            margin-top: .25rem;
+                        }
+
+                        .line {
+                            width: 1.5rem;
+                            border: 2.1px solid #151515;
+                            margin-bottom: .25rem;
+                            border-radius: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        @include section-88-sizing;
+        @include flex-center-column;
+
+        .header-overlay {
+            @include section-vh-desktop;
+            padding-bottom: 2rem;
+            h1 {
+                @include title;
+                font-size: 3.5rem;
+                color: $color-white;
+                width: 35%;
+                text-wrap: wrap;
+                letter-spacing: -.15rem;
+            }
+
+            p {
+                @include text-norm;
+                padding-top: 1rem;
+                padding-bottom: 4rem;
+                color: $color-white;
+                width: 45%;
+            }
+
+            a {
+                @include empty-button;
+
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            @include section-vh-tablet;
+
+            .header-overlay {
+                @include section-sizing-tablet;
+
+                h1 {
+                    @include title-tablet;
+                    width: 65%;
+                }
+
+                p {
+                    @include text-norm-tablet;
+                    width: 60%;
+                }
+
+            }
+        }
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            @include section-vh-mobile;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            .header-overlay {
+                padding-bottom: 3rem;
+
+                h1 {
+                    @include title-mobile;
+                    min-width: 47%;
+                    letter-spacing: -.7px;
+                }
+
+                p {
+                    @include text-norm-mobile;
+                    width: 60%;
+                }
+
+                a {
+                    @include empty-button-mobile;
+                }
+
+            }
+        }
+    }
+}
+
+/*** PRODUCTS **************************************************************/
+
+.products {
+    @include flex-center-column;
+
+    .products-overlay {
+        @include section-vh-desktop;
+
+        .products-title {
+            @include flex-center-column;
+            margin: 5rem 0 3rem 0;
+
+            h2 {
+                @include title;
+            }
+        }
+        .products-info {
+            @include flex-box;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .products-card {
+
+                @include card-sizings;
+                background-color: $card-bg-color;
+                width: 23%;
+                height: 20rem;
+                padding: .8rem;
+
+                .products-status {
+                    background-color: $color-white;
+                    width: 3.3rem;
+                    height: 3.3rem;
+                    border-radius: 50%;
+                    @include flex-center-column;
+
+                    p {
+                        @include text-norm;
+                    }
+                }
+
+                .products-details {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h4 {
+                        @include text-norm;
+                        font-weight: 500;
+
+                        span {
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+
+            @include card-imges;
+        }
+
+        .products-button {
+            @include flex-center-column;
+            margin: 3rem 0 1rem 0;
+
+            a {
+                @include colored-button;
+            }
+
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .products-overlay {
+            @include section-sizing-tablet;
+
+            .products-title {
+                @include flex-center-column;
+                margin: 5rem 0 3rem 0;
+
+                h2 {
+                    @include title;
+                }
+            }
+
+            .products-info {
+                @include flex-box;
+                justify-content: flex-start;
+                gap: 1.5rem;
+
+                .products-card {
+                    width: 30.3%;
+                    height: 18.5rem;
+                    padding: .6rem;
+
+                    .products-status {
+                        width: 3rem;
+                        height: 3rem;
+
+                        p {
+                            @include text-norm-tablet;
+                        }
+                    }
+
+                    .products-details {
+
+                        h4 {
+                            @include text-norm-tablet;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                @include card-imges;
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .products-overlay {
+            @include section-sizing-tablet;
+
+            .products-title {
+                @include flex-center-column;
+                margin: 5rem 0 3rem 0;
+
+                h2 {
+                    @include title;
+                }
+            }
+
+            .products-info {
+                @include flex-box;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+
+                .products-card {
+                    @include card-mobile-sizings;
+                    min-width: 75%;
+                    height: 18.5rem;
+                    padding: .6rem;
+                }
+
+                @include card-mobile-imges;
+            }
+        }
     }
 }

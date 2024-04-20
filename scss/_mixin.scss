@@ -1,0 +1,169 @@
+@import "./variables";
+
+/******************/
+
+@mixin flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*** SECTION SIZING ****************/
+@mixin section-88-sizing{
+    min-height: 88vh;
+}
+@mixin section-97-sizing {
+    width: 96%;
+}
+/*** DESKTOP *******************************************/
+@mixin section-sizing-desktop{
+    min-height: 100vh;
+}
+@mixin section-vh-desktop {
+    width: 82%;
+}
+/*** TABLET ************************************/
+@mixin section-sizing-tablet{
+    width:89%;
+}
+@mixin section-vh-tablet{
+    min-height: 72vh;
+}
+/*** MOBILE ************************************/
+@mixin section-sizing-mobile{
+    width:90%;
+}
+@mixin section-vh-mobile{
+    min-height: 100vh;
+}
+/*** WORD TYPES***********************************/
+
+/*** SUBTITLES *********************************************/
+@mixin little-title{
+    font-size: 1.7rem;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+}
+@mixin little-title-tab{
+    font-size: 1.6rem;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+}
+@mixin little-title-mob{
+    font-size: 1.3rem;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color:  $color-orange;
+}
+/*** Titiles **************************************/
+@mixin title{
+    font-family: 'Playfair Display',serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+/*** SECTION TITLES *****************/
+@mixin title{
+    font-family: 'Playfair Display',serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*** HEADER TITLE *************************************/
+@mixin title-tablet{
+    font-family: 'Playfair Display',serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+    line-height: 1.2;
+}
+@mixin title-mobile{
+    font-family: 'Playfair Display',serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+    line-height: 1;
+}
+/*** TEXT SIZINGS*****************/
+
+@mixin text-norm{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin text-norm-tablet{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin text-norm-mobile{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/*** EMPTY BUTTONS *****************************/
+
+@mixin empty-button{
+    @include text-norm;
+    border: 1px solid $color-orange;
+    color: $color-orange;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: .4rem;
+    transition: .1s linear;
+    &:hover{
+        border: 1px solid $color-orange;
+        color: $color-white;
+        background-color: $color-orange;
+    }
+}
+@mixin empty-button-mobile{
+    @include text-norm;
+    border: 1px solid $color-orange;
+    color: $color-orange;
+    background-color: transparent;
+    padding: 2% 10%;
+    border-radius: .4rem;
+    transition: .1s linear;
+    &:hover{
+        border: 1px solid $color-orange;
+        color: $color-white;
+        background-color: $color-orange;
+        padding: 1.2% 4%;
+    }
+}
+
+/*** COLORED BUTTONS ****************************************/
+@mixin colored-button{
+    @include empty-button;
+    background-color: $color-orange;
+    color: $color-white;
+    &:hover{
+        background-color: transparent;
+        color: $color-orange;
+    }
+}
+@mixin colored-button-mobile{
+    @include empty-button-mobile;
+    background-color: $color-orange;
+    color: $color-white;
+    &:hover{
+        background-color: transparent;
+        color: $color-orange;
+    }
+}

@@ -1,0 +1,67 @@
+@mixin card-sizings{
+    
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin card-imges{
+    .card-1{
+        background-image: url('../assets/products/p1.png');
+        background-size: 60%;
+    }
+    .card-2{
+        background-image: url('../assets/products/p2.png');
+        background-size: 35%;
+    }
+    .card-3{
+        background-image: url('../assets/products/p3.png');
+        background-size: 35%;
+    }
+    .card-4{
+        background-image: url('../assets/products/p4.png');
+    }
+    .card-5{
+        background-image: url('../assets/products/p5.png');
+    }
+    .card-6{
+        background-image: url('../assets/products/p6.png');
+    }
+    .card-7{
+        background-image: url('../assets/products/p7.png');
+        background-size: 20%;
+    }
+    .card-8{
+        background-image: url('../assets/products/p8.png');
+        background-size: 35%;
+    }
+}
+
+@mixin card-mobile-sizings{
+    @include card-sizings;
+    background-size: 40%;
+}
+
+@mixin card-mobile-imges{
+    @include card-imges;
+
+    .card-1{
+        background-size: 50%;
+    }
+    .card-2{
+        background-size: 25%;
+    }
+    .card-3{
+        background-size: 25%;
+    }
+    .card-7{
+        background-size: 10%;
+    }
+    .card-8{
+        background-size: 25%;
+    }
+}

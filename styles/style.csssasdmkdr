@@ -1,0 +1,65 @@
+/*** SECTION SIZING ****************/
+/*** WORD TYPES***********************************/
+/***RESETS***************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*** NAV **************************************************************/
+header {
+  min-height: 100vh;
+  background-image: url("../assets/header/slider-bg.jpg");
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav-overlay {
+  width: 97%;
+  padding: 1% 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-overlay .left-nav h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: static;
+}
+header nav .nav-overlay .right-nav .line-div {
+  background-color: #ffffff;
+  padding: 0.9rem 0.6rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+}
+header nav .nav-overlay .right-nav .line-div .line {
+  width: 2rem;
+  border-top: 3px solid #151515;
+  padding-bottom: 0.2rem;
+}
+
+/*# sourceMappingURL=style.csssasdmkdr.map */

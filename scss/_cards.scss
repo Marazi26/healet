@@ -117,7 +117,6 @@
         padding-bottom: 2%;
     }
 }
-
 @mixin sales-card-tablet{
     .sales-card-1{
         background-image: url("../assets/sales/o1.jpg");
@@ -147,8 +146,6 @@
 
         padding-right: 3.2%;
         padding-bottom: 2%;
-        
-        
     }
     .sales-card-3{
         background-image: url("../assets/sales/o3.jpg");
@@ -165,5 +162,153 @@
 
         padding-left: 3.2%;
         padding-bottom: 2%;
+    }
+}
+
+/***DESC**************/
+@mixin before-1{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: .6rem .8rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1.3rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+            
+        }
+    }
+}
+@mixin before-2{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: .6rem .8rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1.3rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+/***TAB**************/
+@mixin before-1-tablet{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: .8rem 1rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+@mixin before-2-tablet{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: .8rem 1rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+/***MOB**************/
+@mixin before-1-mobile{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: 1rem 1.2rem;
+            @include flex-center-column;
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+@mixin before-2-mobile{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: 1rem 1.2rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
     }
 }

@@ -312,3 +312,30 @@
         }
     }
 }
+
+// FOOTER INPUT 
+
+@mixin footer-boxes{
+        font-size: 1.5rem;
+        color: $color-white;
+        background-color: $color-orange;
+        padding: .95rem 1.5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: linear;
+        &:hover{
+            background-color: $color-black;
+            border: 1px solid $color-orange;
+            border-left: none;
+            padding: .9rem 1.5rem;
+
+        }
+        &:hover a{
+            color: $color-orange;
+        }
+        a{
+            color: $color-white;
+        }
+
+}

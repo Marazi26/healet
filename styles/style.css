@@ -22,6 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.3s linear;
 }
 
 ul,
@@ -247,13 +248,12 @@ img {
     background-color: transparent;
     padding: 2% 10%;
     border-radius: 0.4rem;
-    transition: 0.1s linear;
+    transition: 0.3s linear;
   }
   .nav-and-header header .header-overlay a:hover {
     border: 1px solid #fd9c6b;
     color: #ffffff;
     background-color: #fd9c6b;
-    padding: 1.2% 4%;
   }
 }
 
@@ -1423,6 +1423,263 @@ img {
     font-size: 1rem;
     padding-top: 0.7rem;
     padding-bottom: 1.8rem;
+  }
+}
+
+.testimonial {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-overlay {
+  width: 82%;
+}
+.testimonial .testimonial-overlay .testimonial-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-overlay .testimonial-title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+.testimonial .testimonial-overlay .testimonial-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card {
+  padding: 2% 1%;
+  width: 75%;
+  background-color: #160e0b;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img {
+  width: 18%;
+  border-radius: 50%;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img img {
+  border: 0.5rem solid #7f7b79;
+  border-radius: 50%;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info h3 {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  color: #fd9c6b;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info i {
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.testimonial .testimonial-overlay .testimonial-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 3rem;
+}
+.testimonial .testimonial-overlay .testimonial-buttons a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #fd9c6b;
+  color: #fd9c6b;
+  background-color: transparent;
+  padding: 1% 4%;
+  border-radius: 0.4rem;
+  transition: 0.1s linear;
+  background-color: #fd9c6b;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  transition: linear;
+}
+.testimonial .testimonial-overlay .testimonial-buttons a:hover {
+  border: 1px solid #fd9c6b;
+  color: #ffffff;
+  background-color: #fd9c6b;
+}
+.testimonial .testimonial-overlay .testimonial-buttons a:hover {
+  background-color: transparent;
+  color: #fd9c6b;
+}
+.testimonial .testimonial-overlay .testimonial-buttons a:hover {
+  padding: 0.5rem 1rem;
+  background-color: #160e0b;
+  color: #ffffff;
+  border: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonial .testimonial-overlay {
+    width: 82%;
+  }
+  .testimonial .testimonial-overlay .testimonial-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card {
+    padding: 5% 2%;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img {
+    min-width: 28%;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img img {
+    border: 0.4rem solid #7f7b79;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info h3 {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #fd9c6b;
+    text-transform: capitalize;
+    color: #fd9c6b;
+    font-weight: 400;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 0;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info i {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .testimonial .testimonial-overlay .testimonial-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .testimonial .testimonial-overlay {
+    min-height: 79vh;
+  }
+  .testimonial .testimonial-overlay .testimonial-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card {
+    padding: 5% 3%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img {
+    min-width: 28%;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testmonial-card-img img {
+    border: 0.4rem solid #7f7b79;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info h3 {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #fd9c6b;
+    text-transform: capitalize;
+    color: #fd9c6b;
+    font-weight: 400;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 0;
+  }
+  .testimonial .testimonial-overlay .testimonial-cards .testimonial-card .testimonial-card-info i {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .testimonial .testimonial-overlay .testimonial-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 2rem;
   }
 }
 

@@ -11,6 +11,8 @@
 /*** TEXT SIZINGS*****************/
 /*** EMPTY BUTTONS *****************************/
 /*** COLORED BUTTONS ****************************************/
+/*** PRODUCTS ************************/
+/*** SALES******************************/
 /***RESETS***************************************/
 * {
   margin: 0;
@@ -207,7 +209,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-and-header header {
-    min-height: 100vh;
+    min-height: 79vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -219,7 +221,7 @@ img {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.1rem;
+    text-transform: uppercase;
     line-height: 1;
     min-width: 47%;
     letter-spacing: -0.7px;
@@ -475,7 +477,7 @@ img {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.1rem;
+    text-transform: uppercase;
     line-height: 1;
   }
   .products .products-overlay .products-info {
@@ -544,7 +546,7 @@ img {
   }
 }
 
-/*** PRODUCTS **************************************************************/
+/*** ABOUT **************************************************************/
 .about {
   min-height: 100vh;
   display: flex;
@@ -667,9 +669,10 @@ img {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+    margin-bottom: 4rem;
   }
   .about .about-overlay {
-    min-height: 100vh;
+    min-height: 79vh;
     width: 85%;
     flex-direction: column;
     align-items: flex-start;
@@ -703,7 +706,7 @@ img {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.1rem;
+    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1rem;
   }
@@ -736,5 +739,389 @@ img {
   .about .about-overlay .about-info a:hover {
     background-color: transparent;
     color: #fd9c6b;
+  }
+}
+
+/*** SALES **************************************************************/
+.sales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sales .sales-overlay {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+.sales .sales-overlay .left-sales {
+  border: 1px solid wheat;
+  width: 60%;
+}
+.sales .sales-overlay .left-sales .sales-card-1 {
+  background-image: url("../assets/sales/o1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 81vh;
+  padding-left: 3.2%;
+}
+.sales .sales-overlay .left-sales .sales-card-2 {
+  background-image: url("../assets/sales/o2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 36.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  padding-right: 3.2%;
+  padding-bottom: 2%;
+}
+.sales .sales-overlay .left-sales .sales-card-3 {
+  background-image: url("../assets/sales/o3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 36.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding-left: 3.2%;
+  padding-bottom: 2%;
+}
+.sales .sales-overlay .left-sales h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+.sales .sales-overlay .left-sales a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #fd9c6b;
+  color: #fd9c6b;
+  background-color: transparent;
+  padding: 1% 4%;
+  border-radius: 0.4rem;
+  transition: 0.1s linear;
+  border-radius: 0;
+  padding: 1% 4.5%;
+}
+.sales .sales-overlay .left-sales a:hover {
+  border: 1px solid #fd9c6b;
+  color: #ffffff;
+  background-color: #fd9c6b;
+}
+.sales .sales-overlay .right-sales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 39%;
+}
+.sales .sales-overlay .right-sales .sales-card-1 {
+  background-image: url("../assets/sales/o1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 81vh;
+  padding-left: 3.2%;
+}
+.sales .sales-overlay .right-sales .sales-card-2 {
+  background-image: url("../assets/sales/o2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 36.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  padding-right: 3.2%;
+  padding-bottom: 2%;
+}
+.sales .sales-overlay .right-sales .sales-card-3 {
+  background-image: url("../assets/sales/o3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 36.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding-left: 3.2%;
+  padding-bottom: 2%;
+}
+.sales .sales-overlay .right-sales h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.sales .sales-overlay .right-sales a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #fd9c6b;
+  color: #fd9c6b;
+  background-color: transparent;
+  padding: 1% 4%;
+  border-radius: 0.4rem;
+  transition: 0.1s linear;
+  margin: 1rem 0;
+  border-radius: 0;
+}
+.sales .sales-overlay .right-sales a:hover {
+  border: 1px solid #fd9c6b;
+  color: #ffffff;
+  background-color: #fd9c6b;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sales .sales-overlay {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .sales .sales-overlay .left-sales {
+    border: 1px solid wheat;
+    width: 60%;
+  }
+  .sales .sales-overlay .left-sales .sales-card-1 {
+    background-image: url("../assets/sales/o1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 82vh;
+    padding-left: 3.2%;
+  }
+  .sales .sales-overlay .left-sales .sales-card-2 {
+    background-image: url("../assets/sales/o2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    padding-right: 3.2%;
+    padding-bottom: 2%;
+  }
+  .sales .sales-overlay .left-sales .sales-card-3 {
+    background-image: url("../assets/sales/o3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    padding-left: 3.2%;
+    padding-bottom: 2%;
+  }
+  .sales .sales-overlay .left-sales h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    color: #ffffff;
+  }
+  .sales .sales-overlay .left-sales a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #fd9c6b;
+    color: #fd9c6b;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: 0.4rem;
+    transition: 0.1s linear;
+    border-radius: 0;
+    padding: 1% 4.5%;
+  }
+  .sales .sales-overlay .left-sales a:hover {
+    border: 1px solid #fd9c6b;
+    color: #ffffff;
+    background-color: #fd9c6b;
+  }
+  .sales .sales-overlay .right-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 39%;
+  }
+  .sales .sales-overlay .right-sales .sales-card-1 {
+    background-image: url("../assets/sales/o1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 81vh;
+    padding-left: 3.2%;
+  }
+  .sales .sales-overlay .right-sales .sales-card-2 {
+    background-image: url("../assets/sales/o2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 36.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    padding-right: 3.2%;
+    padding-bottom: 2%;
+  }
+  .sales .sales-overlay .right-sales .sales-card-3 {
+    background-image: url("../assets/sales/o3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 36.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    padding-left: 3.2%;
+    padding-bottom: 2%;
+  }
+  .sales .sales-overlay .right-sales h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .sales .sales-overlay .right-sales a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #fd9c6b;
+    color: #fd9c6b;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: 0.4rem;
+    transition: 0.1s linear;
+    margin: 1rem 0;
+    border-radius: 0;
+  }
+  .sales .sales-overlay .right-sales a:hover {
+    border: 1px solid #fd9c6b;
+    color: #ffffff;
+    background-color: #fd9c6b;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .sales .sales-overlay {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .sales .sales-overlay .left-sales {
+    width: 100%;
+  }
+  .sales .sales-overlay .left-sales .sales-card-1 {
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .sales .sales-overlay .left-sales h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .sales .sales-overlay .left-sales a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #fd9c6b;
+    color: #fd9c6b;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: 0.4rem;
+    transition: 0.1s linear;
+    border-radius: 0;
+    padding: 1% 4.5%;
+  }
+  .sales .sales-overlay .left-sales a:hover {
+    border: 1px solid #fd9c6b;
+    color: #ffffff;
+    background-color: #fd9c6b;
+  }
+  .sales .sales-overlay .right-sales {
+    gap: 1rem;
+    width: 100%;
+  }
+  .sales .sales-overlay .right-sales h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .sales .sales-overlay .right-sales a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #fd9c6b;
+    color: #fd9c6b;
+    background-color: transparent;
+    padding: 1% 4%;
+    border-radius: 0.4rem;
+    transition: 0.1s linear;
+    margin: 1rem 0;
+    border-radius: 0;
+  }
+  .sales .sales-overlay .right-sales a:hover {
+    border: 1px solid #fd9c6b;
+    color: #ffffff;
+    background-color: #fd9c6b;
   }
 }

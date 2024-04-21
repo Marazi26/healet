@@ -13,6 +13,9 @@
 /*** COLORED BUTTONS ****************************************/
 /*** PRODUCTS ************************/
 /*** SALES******************************/
+/***DESC**************/
+/***TAB**************/
+/***MOB**************/
 /***RESETS***************************************/
 * {
   margin: 0;
@@ -148,9 +151,10 @@ img {
 }
 .nav-and-header header .header-overlay h1 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  text-transform: uppercase;
   font-size: 3.5rem;
   color: #ffffff;
   width: 35%;
@@ -272,9 +276,10 @@ img {
 }
 .products .products-overlay .products-title h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 .products .products-overlay .products-info {
   display: flex;
@@ -399,9 +404,9 @@ img {
   }
   .products .products-overlay .products-title h2 {
     font-family: "Playfair Display", serif;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    text-transform: uppercase;
   }
   .products .products-overlay .products-info {
     display: flex;
@@ -587,9 +592,10 @@ img {
 }
 .about .about-overlay .about-info h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 .about .about-overlay .about-info p {
   font-family: "Poppins", sans-serif;
@@ -799,9 +805,10 @@ img {
 }
 .sales .sales-overlay .left-sales h3 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  text-transform: uppercase;
   margin: 1rem 0;
   color: #ffffff;
 }
@@ -1123,6 +1130,299 @@ img {
     border: 1px solid #fd9c6b;
     color: #ffffff;
     background-color: #fd9c6b;
+  }
+}
+
+/*** BLOG **************************************************************/
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.blog .blog-overlay {
+  width: 82%;
+}
+.blog .blog-overlay .blog-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .blog-overlay .blog-title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+.blog .blog-overlay .blog-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .blog-overlay .blog-info .blog-card {
+  width: 48.5%;
+  background-color: #f1f2f3;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info {
+  position: relative;
+  padding: 2rem;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info .before-1::before {
+  content: "14 July";
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 8%;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: #160e0b;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: wrap;
+  z-index: 1;
+  position: absolute;
+  top: -4rem;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info .before-2::before {
+  content: "15 July";
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 8%;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: #160e0b;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: wrap;
+  z-index: 1;
+  position: absolute;
+  top: -4rem;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #160e0b;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 1.8rem;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #fd9c6b;
+  color: #fd9c6b;
+  background-color: transparent;
+  padding: 1% 4%;
+  border-radius: 0.4rem;
+  transition: 0.1s linear;
+  border-radius: 0;
+  border-color: #160e0b;
+  color: #160e0b;
+  padding: 2.2% 5%;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info a:hover {
+  border: 1px solid #fd9c6b;
+  color: #ffffff;
+  background-color: #fd9c6b;
+}
+.blog .blog-overlay .blog-info .blog-card .blog-card-info a:hover {
+  background-color: #160e0b;
+  border: none;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog .blog-overlay {
+    width: 89%;
+    min-height: 72vh;
+  }
+  .blog .blog-overlay .blog-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info {
+    padding: 1.5rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info .before-1::before {
+    content: "14 July";
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 8%;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: #160e0b;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    text-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: -4rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info .before-2::before {
+    content: "15 July";
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 8%;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: #160e0b;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    text-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: -4rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #160e0b;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .blog .blog-overlay {
+    width: 85%;
+    min-height: 79vh;
+  }
+  .blog .blog-overlay .blog-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .blog .blog-overlay .blog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card {
+    width: 100%;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info {
+    position: relative;
+    padding: 2rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info .before-1::before {
+    content: "14 July";
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 8%;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: #160e0b;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    text-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: -4rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info .before-2::before {
+    content: "15 July";
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 8%;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: #160e0b;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    text-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: -4rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #160e0b;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .blog .blog-overlay .blog-info .blog-card .blog-card-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1.8rem;
   }
 }
 

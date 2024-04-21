@@ -305,7 +305,7 @@ img {
                 margin: 5rem 0 3rem 0;
 
                 h2 {
-                    @include title;
+                    @include tablet-title;
                 }
             }
 
@@ -583,27 +583,27 @@ img {
             align-items: stretch;
 
             gap: 1rem;
-    
+
             .left-sales {
                 border: 1px solid wheat;
                 width: 60%;
                 @include sales-card-tablet;
-    
+
                 h3 {
                     @include tablet-title;
                     text-transform: capitalize;
                     margin: 1rem 0;
                     color: $color-white;
                 }
-    
+
                 a {
                     @include empty-button;
                     border-radius: 0;
                     padding: 1% 4.5%;
-    
+
                 }
             }
-    
+
             .right-sales {
                 display: flex;
                 flex-direction: column;
@@ -611,14 +611,14 @@ img {
                 gap: 2rem;
                 width: 39%;
                 @include sales-card;
-    
+
                 h3 {
                     @include title-mobile;
                     font-size: 1.5rem;
                     color: $color-white;
                     text-transform: capitalize;
                 }
-    
+
                 a {
                     @include empty-button;
                     margin: 1rem 0;
@@ -636,39 +636,41 @@ img {
             justify-content: space-between;
             align-items: baseline;
             gap: 1rem;
-    
+
             .left-sales {
                 width: 100%;
-                .sales-card-1{
+
+                .sales-card-1 {
                     min-height: 30vh;
                     background-size: cover;
                     background-position: center;
                 }
+
                 h3 {
                     @include tablet-title;
                     font-size: 1.5rem;
                     text-transform: capitalize;
                 }
-    
+
                 a {
                     @include empty-button;
                     border-radius: 0;
                     padding: 1% 4.5%;
-    
+
                 }
             }
-    
+
             .right-sales {
                 gap: 1rem;
                 width: 100%;
-                
+
                 h3 {
                     @include title-mobile;
                     font-size: 1.5rem;
                     color: $color-white;
                     text-transform: capitalize;
                 }
-    
+
                 a {
                     @include empty-button;
                     margin: 1rem 0;
@@ -676,5 +678,149 @@ img {
                 }
             }
         }
+    }
+}
+
+/*** BLOG **************************************************************/
+
+.blog {
+    @include flex-center-column;
+    @include section-sizing-desktop;
+
+    .blog-overlay {
+        @include section-vh-desktop;
+
+        .blog-title {
+            @include flex-center;
+
+            h2 {
+                @include title;
+            }
+        }
+
+        .blog-info {
+            @include flex-box;
+
+            .blog-card {
+                width: 48.5%;
+                background-color: $blog-card-bg;
+
+
+                .blog-card-info {
+                    position: relative;
+                    padding: 2rem;
+                    @include before-1;
+                    @include before-2;
+
+                    h2 {
+                        @include text-norm;
+                        color: $color-black;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+
+                    }
+
+                    p {
+                        @include text-norm;
+                        font-size: 1rem;
+                        padding-top: .7rem;
+                        padding-bottom: 1.8rem;
+                    }
+
+                    a {
+                        @include empty-button;
+                        border-radius: 0;
+                        border-color: $color-black;
+                        color: $color-black;
+                        padding: 2.2% 5%;
+
+                        &:hover {
+                            background-color: $color-black;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:769px) and (max-width:1024px) {
+
+        .blog-overlay {
+            @include section-sizing-tablet;
+            @include section-vh-tablet;
+
+            .blog-title {
+                h2 {
+                    @include tablet-title;
+                }
+            }
+
+            .blog-info {
+                .blog-card {
+                    .blog-card-info {
+                        padding: 1.5rem;
+                        @include before-1-tablet;
+                        @include before-2-tablet;
+
+                        h2 {
+                            @include text-norm-tablet;
+                            color: $color-black;
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            @include text-norm-tablet;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        
+        .blog-overlay {
+            @include section-sizing-mobile;
+            @include section-vh-mobile;
+    
+            .blog-title {
+                h2 {
+                    @include title-mobile;
+                }
+            }
+    
+            .blog-info {
+                @include flex-center-column;
+                gap: 2rem;
+                .blog-card {
+                    width: 100%;
+    
+
+                    .blog-card-info {
+                        position: relative;
+                        padding: 2rem;
+                        @include before-1-mobile;
+                        @include before-2-mobile;
+                        
+    
+                        h2 {
+                            @include text-norm;
+                            color: $color-black;
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                        }
+    
+                        p {
+                            @include text-norm;
+                            font-size: 1rem;
+                            padding-top: .7rem;
+                            padding-bottom: 1.8rem;
+                        }
+                    }
+                }
+            }
+        } 
     }
 }

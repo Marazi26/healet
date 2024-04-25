@@ -27,7 +27,7 @@ img {
 
 /*** NAV **************************************************************/
 
-.nav-and-header {
+.nav-header-container {
     background-image: url('../assets/header/slider-bg.jpg');
     background-position: top;
     background-size: cover;
@@ -378,7 +378,7 @@ img {
 /*** ABOUT **************************************************************/
 
 .about {
-    @include section-sizing-desktop;
+    min-height: 70vh;
     @include flex-center-column;
 
     .about-overlay {
@@ -430,10 +430,10 @@ img {
 
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include flex-center;
+        min-height: 40vh;
 
         .about-overlay {
             @include section-sizing-tablet;
-            @include section-vh-tablet;
             @include flex-box;
             gap: 2rem;
 
@@ -612,6 +612,10 @@ img {
                 width: 39%;
                 @include sales-card;
 
+                .sales-card-3{
+                    background-size: cover;
+                    background-position: center;
+                }
                 h3 {
                     @include title-mobile;
                     font-size: 1.5rem;
@@ -745,10 +749,10 @@ img {
     }
 
     @media screen and (min-width:769px) and (max-width:1024px) {
+        @include section-vh-tablet;
 
         .blog-overlay {
             @include section-sizing-tablet;
-            @include section-vh-tablet;
 
             .blog-title {
                 h2 {
@@ -828,7 +832,7 @@ img {
 /*** FOOTER **************************************************************/
 
 .testimonial{
-    @include section-sizing-desktop;
+    min-height: 65vh;
     @include flex-center-column;
 
     .testimonial-overlay{
@@ -898,9 +902,11 @@ img {
     }
 
     @media screen and (min-width:768px) and (max-width:1024px) {
+        min-height: 40vh;
+        margin-bottom: 5rem;
         .testimonial-overlay{
+            @include section-sizing-tablet;
             @include section-vh-desktop;
-    
             .testimonial-title{
                 @include flex-center;
                 h2{
@@ -1156,7 +1162,7 @@ footer{
     @media screen and (min-width:768px) and (max-width:1024px) {
         .footer-overlay{
             @include section-vh-tablet;
-            
+            min-height: 40rem;
             .up-footer{
                 margin-bottom: 1rem;
                 .left-up-footer{

@@ -39,18 +39,18 @@ img {
 }
 
 /*** NAV **************************************************************/
-.nav-and-header {
+.nav-header-container {
   background-image: url("../assets/header/slider-bg.jpg");
   background-position: top;
   background-size: cover;
   position: relative;
 }
-.nav-and-header nav {
+.nav-header-container nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-and-header nav .nav-overlay {
+.nav-header-container nav .nav-overlay {
   width: 96%;
   padding: 1.5% 0;
   position: relative;
@@ -58,14 +58,14 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.nav-and-header nav .nav-overlay .left-nav h2 {
+.nav-header-container nav .nav-overlay .left-nav h2 {
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   position: static;
 }
-.nav-and-header nav .nav-overlay .right-nav .line-div {
+.nav-header-container nav .nav-overlay .right-nav .line-div {
   background-color: #ffffff;
   border: 0.5px solid #f1eeee;
   padding: 0.7rem 0.7rem;
@@ -79,32 +79,32 @@ img {
   justify-content: center;
   align-items: center;
 }
-.nav-and-header nav .nav-overlay .right-nav .line-div :first-child {
+.nav-header-container nav .nav-overlay .right-nav .line-div :first-child {
   margin-top: 0.35rem;
 }
-.nav-and-header nav .nav-overlay .right-nav .line-div .line {
+.nav-header-container nav .nav-overlay .right-nav .line-div .line {
   width: 2rem;
   border: 2.1px solid #151515;
   margin-bottom: 0.35rem;
   border-radius: 0.2rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-and-header nav .nav-overlay .left-nav h2 {
+  .nav-header-container nav .nav-overlay .left-nav h2 {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
   }
-  .nav-and-header nav .nav-overlay .line-div {
+  .nav-header-container nav .nav-overlay .line-div {
     padding: 0.7rem 0.7rem;
     font-size: 1.7rem;
     right: 0rem;
     top: 0rem;
   }
-  .nav-and-header nav .nav-overlay .line-div :first-child {
+  .nav-header-container nav .nav-overlay .line-div :first-child {
     margin-top: 0.35rem;
   }
-  .nav-and-header nav .nav-overlay .line-div .line {
+  .nav-header-container nav .nav-overlay .line-div .line {
     width: 2rem;
     border: 2.1px solid #151515;
     margin-bottom: 0.35rem;
@@ -112,45 +112,45 @@ img {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-and-header nav .nav-overlay {
+  .nav-header-container nav .nav-overlay {
     width: 85%;
     padding: 2% 0;
   }
-  .nav-and-header nav .nav-overlay .left-nav h2 {
+  .nav-header-container nav .nav-overlay .left-nav h2 {
     font-size: 1.3rem;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     color: #fd9c6b;
     color: #ffffff;
   }
-  .nav-and-header nav .nav-overlay .right-nav .line-div {
+  .nav-header-container nav .nav-overlay .right-nav .line-div {
     padding: 0.6rem 0.7rem;
     font-size: 1.7rem;
     right: 1rem;
     top: 0.6rem;
   }
-  .nav-and-header nav .nav-overlay .right-nav .line-div :first-child {
+  .nav-header-container nav .nav-overlay .right-nav .line-div :first-child {
     margin-top: 0.25rem;
   }
-  .nav-and-header nav .nav-overlay .right-nav .line-div .line {
+  .nav-header-container nav .nav-overlay .right-nav .line-div .line {
     width: 1.5rem;
     border: 2.1px solid #151515;
     margin-bottom: 0.25rem;
     border-radius: 0.2rem;
   }
 }
-.nav-and-header header {
+.nav-header-container header {
   min-height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.nav-and-header header .header-overlay {
+.nav-header-container header .header-overlay {
   width: 82%;
   padding-bottom: 2rem;
 }
-.nav-and-header header .header-overlay h1 {
+.nav-header-container header .header-overlay h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -162,7 +162,7 @@ img {
   text-wrap: wrap;
   letter-spacing: -0.15rem;
 }
-.nav-and-header header .header-overlay p {
+.nav-header-container header .header-overlay p {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -172,7 +172,7 @@ img {
   color: #ffffff;
   width: 45%;
 }
-.nav-and-header header .header-overlay a {
+.nav-header-container header .header-overlay a {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -184,19 +184,19 @@ img {
   border-radius: 0.4rem;
   transition: 0.1s linear;
 }
-.nav-and-header header .header-overlay a:hover {
+.nav-header-container header .header-overlay a:hover {
   border: 1px solid #fd9c6b;
   color: #ffffff;
   background-color: #fd9c6b;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-and-header header {
+  .nav-header-container header {
     min-height: 72vh;
   }
-  .nav-and-header header .header-overlay {
+  .nav-header-container header .header-overlay {
     width: 89%;
   }
-  .nav-and-header header .header-overlay h1 {
+  .nav-header-container header .header-overlay h1 {
     font-family: "Playfair Display", serif;
     font-size: 3rem;
     font-weight: 700;
@@ -204,7 +204,7 @@ img {
     line-height: 1.2;
     width: 65%;
   }
-  .nav-and-header header .header-overlay p {
+  .nav-header-container header .header-overlay p {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -213,16 +213,16 @@ img {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-and-header header {
+  .nav-header-container header {
     min-height: 79vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .nav-and-header header .header-overlay {
+  .nav-header-container header .header-overlay {
     padding-bottom: 3rem;
   }
-  .nav-and-header header .header-overlay h1 {
+  .nav-header-container header .header-overlay h1 {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
@@ -231,14 +231,14 @@ img {
     min-width: 47%;
     letter-spacing: -0.7px;
   }
-  .nav-and-header header .header-overlay p {
+  .nav-header-container header .header-overlay p {
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5;
     width: 60%;
   }
-  .nav-and-header header .header-overlay a {
+  .nav-header-container header .header-overlay a {
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
@@ -250,7 +250,7 @@ img {
     border-radius: 0.4rem;
     transition: 0.3s linear;
   }
-  .nav-and-header header .header-overlay a:hover {
+  .nav-header-container header .header-overlay a:hover {
     border: 1px solid #fd9c6b;
     color: #ffffff;
     background-color: #fd9c6b;
@@ -553,7 +553,7 @@ img {
 
 /*** ABOUT **************************************************************/
 .about {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -632,10 +632,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 40vh;
   }
   .about .about-overlay {
     width: 89%;
-    min-height: 72vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1021,6 +1021,10 @@ img {
     padding-left: 3.2%;
     padding-bottom: 2%;
   }
+  .sales .sales-overlay .right-sales .sales-card-3 {
+    background-size: cover;
+    background-position: center;
+  }
   .sales .sales-overlay .right-sales h3 {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -1258,9 +1262,11 @@ img {
   border: none;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog {
+    min-height: 72vh;
+  }
   .blog .blog-overlay {
     width: 89%;
-    min-height: 72vh;
   }
   .blog .blog-overlay .blog-title h2 {
     font-family: "Playfair Display", serif;
@@ -1427,7 +1433,7 @@ img {
 
 /*** FOOTER **************************************************************/
 .testimonial {
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1538,7 +1544,12 @@ img {
   border: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonial {
+    min-height: 40vh;
+    margin-bottom: 5rem;
+  }
   .testimonial .testimonial-overlay {
+    width: 89%;
     width: 82%;
   }
   .testimonial .testimonial-overlay .testimonial-title {
@@ -1915,6 +1926,7 @@ footer .rights-reserved p {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   footer .footer-overlay {
     min-height: 72vh;
+    min-height: 40rem;
   }
   footer .footer-overlay .up-footer {
     margin-bottom: 1rem;

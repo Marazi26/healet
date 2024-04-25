@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet"/>
+    <link   rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
-    <div class="nav-and-header">
+    <div class="nav-header-container">
         <nav>
             <div class="nav-overlay">
                 <div class="left-nav">
@@ -28,7 +29,7 @@
             </div>
         </nav>
 
-        <header>
+        <header class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="header-overlay">
                 <h1>Best Jewellery Collection</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
@@ -38,14 +39,14 @@
     </div>
 
     <main>
-        <section class="products" >
+        <section class="products" id="home">
             <div class="products-overlay">
-                <div class="products-title">
+                <div class="products-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                     <h2>Latest Products</h2>
                 </div>
                 <div class="products-info">
 
-                    <div class="products-card card-1">
+                    <div class="products-card card-1 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -55,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-2">
+                    <div class="products-card card-2 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -65,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-3">
+                    <div class="products-card card-3 wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -75,7 +76,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-4">
+                    <div class="products-card card-4 wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -85,7 +86,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-5">
+                    <div class="products-card card-5 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -95,7 +96,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-6">
+                    <div class="products-card card-6 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -105,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-7">
+                    <div class="products-card card-7 wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -115,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="products-card card-8">
+                    <div class="products-card card-8 wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" id="home">
                         <div class="products-status">
                             <p>New</p>
                         </div>
@@ -131,12 +132,12 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-overlay">
-                <div class="about-images">
+                <div class="about-images wow animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" id="home">
                     <img src="./assets/about/about-img.jpg" alt="aboutIMG">
                 </div>
-                <div class="about-info">
+                <div class="about-info wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s" id="home">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.</p>
                     <a href="">Read More</a>
@@ -144,20 +145,20 @@
             </div>
         </section>
 
-        <section class="sales">
+        <section class="sales" id="shop">
             <div class="sales-overlay">
                 <div class="left-sales">
-                    <div class="sales-card-1">
+                    <div class="sales-card-1 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <h3>Upto 15% off</h3>
                         <a href="">Shop Now</a>
                     </div>
                 </div>
                 <div class="right-sales">
-                    <div class="sales-card-2">
+                    <div class="sales-card-2 wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <h3>Upto 10% off</h3>
                         <a href="">Shop Now</a>
                     </div>
-                    <div class="sales-card-3">
+                    <div class="sales-card-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <h3>Upto 20% off</h3>
                         <a href="">Shop Now</a>
                     </div>
@@ -165,13 +166,13 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog-overlay">
                 <div class="blog-title">
                     <h2>Latest from blog</h2>
                 </div>
                 <div class="blog-info">
-                    <div class="blog-card">
+                    <div class="blog-card wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                             <img src="./assets/blog/b1.jpg" alt="blogIMG">
                         <div class="blog-card-info">
                             <h2 class="before-1">Molestiae ad reiciendis dignissimos</h2>
@@ -180,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="blog-card">
+                    <div class="blog-card wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="blog-card-img">
                             <img src="./assets/blog/b2.jpg" alt="blogIMG">
                         </div>
@@ -201,7 +202,7 @@
                 </div>
 
                 <div class="testimonial-cards">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" id="home">
                         <div class="testmonial-card-img">
                             <img src="/assets/testmonial/client.jpg" alt="testimonialIMG">
                         </div>
@@ -220,5 +221,79 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-overlay">
+            <div class="up-footer">
+                <div class="left-up-footer">
+                    <input type="text" placeholder="Enter your email">
+                    <div class="input-div">
+                        <a href=""><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="right-up-footer">
+                    <ul>
+                        <li><a href="https://www.facebook.com/SmartCode.am/?locale=hy_AM" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/smartcode.education/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-footer">
+
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="instagram">
+                    <h2>Instagram</h2>
+                    <div class="necklace">
+                        <img src="./assets/products/p1.png" alt="necklace">
+                        <p>long established fact that a reader</p>
+                    </div>
+                    <div class="necklace">
+                        <img src="./assets/products/p2.png" alt="necklace" id="img-2">
+                        <p>long established fact that a reader</p>
+                    </div>
+                </div>
+
+                <div class="about-us">
+                    <h2>About Us</h2>
+                    <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+                </div>
+
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="">Location</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:1234567890">Call +01 1234567890</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:mail@domain.com">mail@domain.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="rights-reserved">
+            <p>© 2024 All Rights Reserved. By HTML Design</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init()</script>
 </body>
 </html>

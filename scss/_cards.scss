@@ -1,0 +1,341 @@
+/*** PRODUCTS ************************/
+@mixin card-sizings{
+    
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin card-imges{
+    .card-1{
+        background-image: url('../assets/products/p1.png');
+        background-size: 60%;
+    }
+    .card-2{
+        background-image: url('../assets/products/p2.png');
+        background-size: 35%;
+    }
+    .card-3{
+        background-image: url('../assets/products/p3.png');
+        background-size: 35%;
+    }
+    .card-4{
+        background-image: url('../assets/products/p4.png');
+    }
+    .card-5{
+        background-image: url('../assets/products/p5.png');
+    }
+    .card-6{
+        background-image: url('../assets/products/p6.png');
+    }
+    .card-7{
+        background-image: url('../assets/products/p7.png');
+        background-size: 20%;
+    }
+    .card-8{
+        background-image: url('../assets/products/p8.png');
+        background-size: 35%;
+    }
+}
+
+@mixin card-mobile-sizings{
+    @include card-sizings;
+    background-size: 40%;
+}
+
+@mixin card-mobile-imges{
+    @include card-imges;
+
+    .card-1{
+        background-size: 50%;
+    }
+    .card-2{
+        background-size: 25%;
+    }
+    .card-3{
+        background-size: 25%;
+    }
+    .card-7{
+        background-size: 10%;
+    }
+    .card-8{
+        background-size: 25%;
+    }
+}
+
+/*** SALES******************************/
+
+@mixin sales-card{
+    .sales-card-1{
+        background-image: url("../assets/sales/o1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-height: 81vh;
+        padding-left: 3.2%;
+
+    }
+    .sales-card-2{
+        background-image: url("../assets/sales/o2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 36.5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+
+        padding-right: 3.2%;
+        padding-bottom: 2%;
+        
+        
+    }
+    .sales-card-3{
+        background-image: url("../assets/sales/o3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        min-height: 36.5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+
+        padding-left: 3.2%;
+        padding-bottom: 2%;
+    }
+}
+@mixin sales-card-tablet{
+    .sales-card-1{
+        background-image: url("../assets/sales/o1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-height: 82vh;
+        padding-left: 3.2%;
+
+    }
+    .sales-card-2{
+        background-image: url("../assets/sales/o2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+
+        padding-right: 3.2%;
+        padding-bottom: 2%;
+    }
+    .sales-card-3{
+        background-image: url("../assets/sales/o3.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        min-height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+
+        padding-left: 3.2%;
+        padding-bottom: 2%;
+    }
+}
+
+/***DESC**************/
+@mixin before-1{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: .6rem .8rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1.3rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+            
+        }
+    }
+}
+@mixin before-2{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: .6rem .8rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1.3rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+/***TAB**************/
+@mixin before-1-tablet{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: .8rem 1rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+@mixin before-2-tablet{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: .8rem 1rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+/***MOB**************/
+@mixin before-1-mobile{
+    .before-1{
+        &::before{
+            content: "14 July";
+            @include text-norm;
+            width: 8%;
+            padding: 1rem 1.2rem;
+            @include flex-center-column;
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+@mixin before-2-mobile{
+    .before-2{
+        &::before{
+            content: "15 July";
+            @include text-norm;
+            width: 8%;
+            padding: 1rem 1.2rem;
+            @include flex-center-column;
+            
+            border: 3px solid $color-white;
+            color: $color-white;
+            background-color: $color-black;
+            
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: wrap;
+
+            z-index: 1;
+            position: absolute;
+            top: -4rem;
+        }
+    }
+}
+
+// FOOTER INPUT 
+
+@mixin footer-boxes{
+        font-size: 1.5rem;
+        color: $color-white;
+        background-color: $color-orange;
+        padding: .95rem 1.5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: linear;
+        &:hover{
+            background-color: $color-black;
+            border: 1px solid $color-orange;
+            border-left: none;
+            padding: .9rem 1.5rem;
+
+        }
+        &:hover a{
+            color: $color-orange;
+        }
+        a{
+            color: $color-white;
+        }
+
+}

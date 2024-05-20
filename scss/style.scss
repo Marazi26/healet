@@ -25,6 +25,9 @@ img {
     width: 100%;
 }
 
+body{
+    overflow-x: hidden;
+}
 /*** NAV **************************************************************/
 
 .nav-header-container {
@@ -228,7 +231,6 @@ img {
 
 .products {
     @include flex-center-column;
-
     .products-overlay {
         @include section-vh-desktop;
 
@@ -380,7 +382,7 @@ img {
 .about {
     min-height: 70vh;
     @include flex-center-column;
-
+    overflow: hidden;
     .about-overlay {
         @include section-vh-desktop;
         @include flex-box;
@@ -527,6 +529,7 @@ img {
 
 .sales {
     @include flex-center-column;
+    overflow: hidden;
 
     .sales-overlay {
 
@@ -585,7 +588,6 @@ img {
             gap: 1rem;
 
             .left-sales {
-                border: 1px solid wheat;
                 width: 60%;
                 @include sales-card-tablet;
 

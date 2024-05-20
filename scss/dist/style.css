@@ -38,6 +38,10 @@ img {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*** NAV **************************************************************/
 .nav-header-container {
   background-image: url("../assets/header/slider-bg.jpg");
@@ -558,6 +562,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .about .about-overlay {
   width: 82%;
@@ -754,6 +759,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .sales .sales-overlay {
   width: 98%;
@@ -910,7 +916,6 @@ img {
     gap: 1rem;
   }
   .sales .sales-overlay .left-sales {
-    border: 1px solid wheat;
     width: 60%;
   }
   .sales .sales-overlay .left-sales .sales-card-1 {
